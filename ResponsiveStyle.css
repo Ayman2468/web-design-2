@@ -1,0 +1,678 @@
+:root {
+    --main-header-color: white;
+    --secondary-header-color: #ff9000;
+    --text-color: #979797;
+    --text-color2: #2d2d2d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+header {
+    background-color: #e7e9ec;
+    background-image: url(images/Banner-bg.jpg);
+    background-size: 1754px;
+    background-repeat: no-repeat;
+    color: var(--main-header-color);
+    height: 630px;
+}
+
+header .navback {
+    height: 95px;
+    background-color: rgba(20, 26, 32, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: thin solid #b6b4b6;
+}
+
+header span {
+    color: var(--secondary-header-color);
+}
+
+header,
+.navback h2 {
+    margin-bottom: 10px;
+}
+
+header .navback nav a {
+    padding: 11px 3px;
+    color: var(--main-header-color);
+}
+
+a:visited {
+    color: var(--main-header-color);
+}
+
+header .navback nav a:hover {
+    background-color: #304a67;
+    border-bottom: 2px solid var(--secondary-header-color);
+    transition: .5s;
+}
+
+header .headerbody {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .headerbody article {
+    width: 220px;
+    margin: 0px 0px 70px;
+}
+
+header .headerbody article p {
+    font-style: italic;
+    font-size: 12px;
+    margin: 25px 0px 30px;
+}
+
+header .headerbody article a {
+    font-size: 10px;
+    border: thin solid var(--main-header-color);
+    color: var(--main-header-color);
+    padding: 15px;
+}
+
+header .headerbody .image {
+    width: 320px;
+}
+
+header .headerbody .image img {
+    width: inherit;
+}
+
+header .headerbody .image footer {
+    background-color: rgba(0, 0, 0, .8);
+    position: relative;
+    bottom: 90px;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px;
+}
+
+header .headerbody .image .icon1 img {
+    width: 40px;
+    height: 40px;
+}
+
+header .headerbody .image .icon1 p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 30px 0px 10px;
+    position: relative;
+    bottom: 15px;
+}
+
+header .headerbody .image footer p {
+    font-size: 14px;
+}
+
+header .headerbody .image footer p span {
+    font-size: 12px;
+    float: right;
+}
+
+.article {
+    text-align: center;
+}
+
+.article h1 {
+    padding-top: 118px;
+    font-size: 47px;
+}
+
+.article p {
+    margin: 35px auto;
+    width: 320px;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+hr {
+    margin: 0px auto;
+    width: 250px;
+    height: 2px;
+    border: none;
+    background-color: var(--secondary-header-color);
+}
+
+#aboutus {
+    margin-bottom: 30px;
+}
+
+#aboutus .buttons {
+    margin: 40px auto;
+    width: 320px;
+}
+
+#aboutus .buttons button {
+    display: block;
+    margin: 60px auto;
+    width: 175px;
+    height: 53px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: var(--text-color);
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+#aboutus .buttons button:hover {
+    color: var(--main-header-color);
+    background-color: var(--secondary-header-color);
+    border-color: var(--secondary-header-color);
+    transition: .5s;
+}
+
+#aboutus section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#aboutus section .images {
+    margin: 0px auto;
+}
+
+#aboutus section .images .down>img,
+#aboutus section .images .up>img {
+    transform: translateX(34px);
+    width: 260px;
+    border: 6px solid var(--main-header-color);
+    outline: thin solid #ececec;
+}
+
+#aboutus section .images .down .imgshadow {
+    transform: translate(-40px, -11px);
+    z-index: -1;
+}
+
+#aboutus section .images .up {
+    transform: translate(-20px, -175px);
+}
+
+#aboutus section .images .up .imgshadow {
+    transform: translateX(-25px);
+    position: relative;
+    bottom: 11px;
+    z-index: -1;
+}
+
+#aboutus section article {
+    text-align: left;
+    width: 300px;
+    margin: 0px auto;
+}
+
+#aboutus section article h2 {
+    font-weight: lighter;
+}
+
+#aboutus section article h2 span {
+    font-size: 16px;
+    color: var(--secondary-header-color);
+}
+
+#aboutus section article p {
+    width: inherit;
+    margin: 35px auto;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+#services {
+    background-image: url(images/Services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 5172px;
+    padding-bottom: 100px;
+}
+
+#services .article h1 {
+    color: var(--main-header-color);
+}
+
+#services .ser {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+#services .ser div {
+    margin: 20px auto;
+}
+
+#services .ser .development {
+    background-image: url(images/Development-bg.jpg);
+}
+
+#services .ser .design {
+    background-image: url(images/desgin-bg.jpg);
+}
+
+#services .ser .concept {
+    background-image: url(images/concept-bg.jpg);
+}
+
+#services .ser .system {
+    background-image: url(images/systam-bg.jpg);
+}
+
+#services .ser div {
+    text-align: center;
+    width: 245px;
+    height: 387px;
+}
+
+#services .ser div .hover {
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+#services .ser div .icon {
+    position: relative;
+    bottom: 78px;
+    z-index: 0;
+}
+
+#services .ser div p {
+    font-size: 12px;
+    color: var(--main-header-color);
+    position: relative;
+    bottom: 58px;
+    opacity: 15%;
+}
+
+#services .ser div:hover p {
+    opacity: 100%;
+}
+
+#services .ser div:hover .hover {
+    z-index: 1;
+}
+
+#pricing {
+    background-color: #ececec;
+    height: 1900px;
+
+}
+
+#pricing .order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 75px auto;
+    padding-bottom: 118px;
+}
+
+#pricing .order div {
+    width: 180px;
+    height: 442px;
+    margin-bottom: 50px;
+    background-color: var(--main-header-color);
+}
+
+#pricing .order div p {
+    text-align: center;
+    font-size: 12px;
+}
+
+#pricing .order div .one {
+    padding: 34px 0px;
+    position: relative;
+    bottom: 7px;
+    font-weight: bold;
+    color: var(--text-color2);
+    background-color: var(--secondary-header-color);
+}
+
+#pricing .order div .two {
+    padding: 25px 8px;
+    font-size: 28px;
+    position: relative;
+    bottom: 7px;
+    color: var(--secondary-header-color);
+    background-color: var(--text-color2);
+}
+
+#pricing .order div .three,
+#pricing .order div .four,
+#pricing .order div .five,
+#pricing .order div .six {
+    padding: 10px 0px;
+    margin: 0px auto;
+    width: 100px;
+    color: var(--text-color);
+    border-bottom: thin solid var(--text-color);
+}
+
+#pricing .order div .six {
+    border: none;
+}
+
+#pricing .order div a {
+    padding: 33px 42px;
+    position: relative;
+    top: 33px;
+    font-size: 15px;
+    color: var(--main-header-color);
+    background-color: var(--text-color2);
+}
+
+#pricing .order .biz a {
+    padding-right: 43px;
+}
+
+#pricing .order .pro a {
+    padding-right: 43px;
+}
+
+#contactus {
+    background-image: url(images/Contact-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+#contactus .contact {
+    background-color: #000;
+    margin-top: 55px;
+    padding: 50px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contactus .contact form {
+    margin: 0px auto;
+}
+
+#contactus .contact form input,
+#contactus .contact form textarea {
+    display: block;
+    width: 300px;
+    height: 150px;
+    font-size: 10px;
+    border: none;
+    text-indent: 10px;
+}
+
+#contactus .contact form input {
+    height: 50px;
+    margin: 15px 0px;
+}
+
+#contactus .contact form textarea {
+    padding-top: 10px;
+}
+
+#contactus .contact form input:last-child {
+    text-indent: 0px;
+    font-weight: bold;
+    color: var(--main-header-color);
+    background-color: var(--secondary-header-color);
+}
+
+#contactus .contact article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 10px;
+    color: var(--text-color);
+    width: 300px;
+    margin: 50px auto;
+}
+
+#contactus .contact article h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--secondary-header-color);
+}
+
+#contactus .contact article div p {
+    display: inline-block;
+    line-height: 15px;
+    margin: 15px 32px 15px 50px;
+}
+
+#contactus .contact article div img {
+    margin-right: 20px;
+    position: relative;
+    top: 50px;
+}
+
+#contactus .contact article .email a {
+    color: var(--text-color);
+    position: relative;
+    top: 40px;
+}
+
+#contactus .contact article .im {
+    margin-top: 40px;
+}
+
+
+#contactus>p {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0px;
+    color: var(--text-color);
+}
+
+@media (min-width:425px) {
+    header .navback nav a {
+        padding: 11px 15px;
+    }
+
+    header .headerbody .image {
+        width: 367px;
+    }
+
+    header .headerbody .image footer .icon1 {
+        width: 110px;
+    }
+
+    header .headerbody .image footer p {
+        font-size: 16px;
+    }
+
+    header .headerbody .image footer p span {
+        font-size: 14px;
+    }
+
+    header .headerbody .image .footershadow {
+        width: 380px;
+        height: 21px;
+        margin-left: -8px;
+        background-color: rgba(0, 0, 0, .2);
+        position: relative;
+        bottom: 112px;
+        filter: blur(2px);
+        transform: skewX(30deg);
+        clear: both;
+    }
+}
+
+@media (min-width:576px) {
+    header .navback {
+        flex-direction: row;
+    }
+
+    header .navback h2 {
+        margin-bottom: 0px;
+    }
+
+    .article p {
+        width: 500px;
+    }
+
+    #aboutus .buttons {
+        width: auto;
+        text-align: center;
+    }
+
+    #aboutus .buttons button {
+        display: inline;
+        margin: 60px -3px;
+    }
+
+    #aboutus .buttons .second {
+        border-left: none;
+        border-right: none;
+    }
+
+    #aboutus section article {
+        width: 450px;
+    }
+
+    #services .ser {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 70px 20px 0px;
+    }
+
+    #pricing {
+        height: auto;
+    }
+
+    #pricing .order {
+        flex-direction: row;
+        margin: 75px auto 0px;
+    }
+}
+
+@media (min-width:768px) {
+    header .headerbody {
+        flex-direction: row;
+    }
+
+    header .headerbody .image {
+        width: 470px;
+        position: relative;
+        top: 190px;
+    }
+
+    header .headerbody .image footer .icon1 {
+        width: auto;
+    }
+
+    header .headerbody .image .footershadow {
+        width: 480px;
+    }
+
+    .article p {
+        width: 700px;
+    }
+
+    #aboutus section {
+        flex-direction: row;
+    }
+
+    #aboutus section article {
+        width: 375px;
+        margin: 0px 18px 0px -55px;
+    }
+
+    #contactus .contact {
+        flex-direction: row;
+    }
+
+    #contactus .contact article {
+        justify-content: flex-start;
+    }
+
+    #contactus .contact article div p {
+        margin: 0px 32px 0px 50px;
+    }
+
+    #contactus .contact article div img {
+        top: 33px;
+    }
+
+    #contactus .contact article .email a {
+        top: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    header .navback nav a {
+        padding: 38px 35px 36px;
+    }
+
+    header .headerbody .image {
+        width: 600px;
+        top: 108px;
+    }
+
+    header .headerbody .image .footershadow {
+        width: 610px;
+    }
+
+    #aboutus section .images {
+        margin: 0px;
+    }
+
+    #aboutus section .images .down>img,
+    #aboutus section .images .up>img {
+        width: auto;
+        transform: translateX(-10px);
+    }
+
+    #aboutus section .images .down .imgshadow {
+        transform: translate(30px, -11px);
+    }
+
+    #aboutus section .images .up {
+        transform: translate(-40px, -225px);
+    }
+
+    #aboutus section .images .up .imgshadow {
+        bottom: 11px;
+    }
+
+    #services .ser {
+        margin: 70px 130px 0px;
+    }
+}
+
+@media (min-width:1024px) {
+    #services .ser {
+        margin: 70px 5px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        height: 678px;
+    }
+
+    header .headerbody .image {
+        width: auto;
+        top: 50px;
+    }
+
+    header .headerbody .image .footershadow {
+        width: 762px;
+        height: 43px;
+        margin-left: -12px;
+        bottom: 133px;
+    }
+
+    .article p {
+        width: 950px;
+    }
+}
